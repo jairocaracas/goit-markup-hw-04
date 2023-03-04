@@ -12,7 +12,8 @@
   --sm-icon-bg-color: #ffffff1a;
   --secondary-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
-  --dark-bg-color-opacity: #2f303a75;
+  --dark-bg-color-opacity: #2f303a5b;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -141,7 +142,7 @@ header nav {
 .introduction {
   background: linear-gradient(
       var(--dark-bg-color-opacity),
-      var(--dark-bg-color)
+      var(--dark-bg-color-opacity)
     ),
     url('../img/bg-header.jpg');
   background-color: var(--dark-bg-color);
@@ -334,6 +335,12 @@ header nav {
   cursor: pointer;
   margin: 20px 10px 0 0;
 }
+.team-member > h4 {
+  margin-top: 30px;
+}
+.team-button {
+  margin: 16px 5px 30px 5px;
+}
 
 svg.icon-sm {
   display: inline-block;
@@ -342,4 +349,22 @@ svg.icon-sm {
   stroke-width: 0;
   stroke: currentColor;
   fill: white;
+}
+
+.sm-team-list {
+  display: flex;
+  justify-content: center;
+}
+
+svg.icon-sm-team {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: var(--icon-color);
+}
+
+.round-button:hover > .icon-sm-team {
+  fill: var(--primary-bg-color);
 }
