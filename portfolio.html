@@ -36,16 +36,21 @@
             <ul class="contact-header list-style-none">
                 <li>
                     <a class="contact-header-item link" href="mailto:info@devstudio.com">
-                        <img class="contact-icon" src="./img/mail-icon.svg" alt="icono correo" height="12" width="16">
+                        <svg class="contact-icon">
+                            <use xlink:href="./img/icons.svg#icon-mail"></use>
+                        </svg>
                         info@devstudio.com
                     </a>
                 </li>
                 <li>
                     <a class="contact-header-item link" href="tel:+525555296000 ">
-                        <img class="contact-icon" src="./img/phone-icon.svg" alt="icono celular" height="16" width="10">
+                        <svg class="contact-icon">
+                            <use xlink:href="./img/icons.svg#icon-phone"></use>
+                        </svg>
                         +52 55 5529 6000</a>
                 </li>
             </ul>
+        </div>
     </header>
 
     <main>
@@ -142,7 +147,6 @@
 
     <footer class="footer-menu">
         <div class="container-footer">
-
             <section class="contact-footer">
                 <a class="logo-dark" href="#">
                     <strong>Web<span>Studio</span></strong>
@@ -163,27 +167,36 @@
             </section>
 
             <section class="sm-footer">
-
                 <h3>ENCUENTRENOS EN</h3>
+
                 <ul class="sm-list list-style-none">
                     <li>
-                        <button class="round-button" type="button">
-                            <img src="./img/sm-instagram.png" alt="icono instagram" width="20" height="20">
+                        <button class="round-button footer-button" type="button">
+                            <svg class="icon-sm">
+                                <use xlink:href="./img/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="round-button footer-button" type="button">
+                            <svg class="icon-sm">
+                                <use xlink:href="./img/icons.svg#icon-twitter"></use>
+                            </svg>
                         </button>
                     </li>
                     <li>
-                        <button class="round-button" type="button">
-                            <img src="./img/sm-twitter.png" alt="icono twitter" width="20" height="20">
+                        <button class="round-button footer-button" type="button">
+                            <svg class="icon-sm">
+                                <use xlink:href="./img/icons.svg#icon-facebook"></use>
+                            </svg>
                         </button>
                     </li>
                     <li>
-                        <button class="round-button" type="button">
-                            <img src="./img/sm_facebook.png" alt="icono facebook" width="20" height="20">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="round-button" type="button">
-                            <img src="./img/sm-linkedin.png" alt="icono linkedin" width="20" height="20">
+                        <button class="round-button footer-button" type="button">
+                            <svg class="icon-sm">
+                                <use xlink:href="./img/icons.svg#icon-linkedin"></use>
+                            </svg>
                         </button>
                     </li>
                 </ul>
